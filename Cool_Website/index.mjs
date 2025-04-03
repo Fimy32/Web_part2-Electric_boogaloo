@@ -19,9 +19,9 @@ app.get("/", (req, res) =>{
       res.render("landing_page");
 });
 
-app.get("/staff", (req, res) =>{
-	database1.all("SELECT * FROM staff", [], (error, results)=>{
-	res.render("staff", {results: results});
+app.get("/dept", (req, res) =>{
+	database1.all("SELECT * FROM dept", [], (error, results)=>{
+	res.render("dept", {results: results});
 });
 });
 
